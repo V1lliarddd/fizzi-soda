@@ -3,7 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Fizzi</title>
   </head>
-  <body></body>
+  <body class="container">
+    <header>
+      <div class="header__title-block">
+        <h1 class="header__title eczar-medium">Fizzi</h1>
+      </div>
+      <div class="header__arrow-down float-element">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
+      <h2 class="header__subtitle eczar-medium float-element">Scroll down</h2>
+      <div class="header__arrow-down float-element">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
+    </header>
+    <main>
+      <section class="introduction eczar-medium">
+        <h2 class="auto-focus">We are happy</h2>
+        <h2 class="auto-focus">To introduce you</h2>
+        <h2 class="auto-focus">4 brand new</h2>
+        <h2 class="auto-focus">Flavors of Fizzi</h2>
+      </section>
+      <section class="can-slider auto-focus">
+        <div class="can-slider__list">
+          <div
+            id="cherry-can"
+            class="can-slider__list-item"
+            style="--position: 1"
+          >
+            <img src="./images/can-1.png" alt="" />
+          </div>
+          <div
+            id="grape-can"
+            class="can-slider__list-item"
+            style="--position: 2"
+          >
+            <img src="./images/can-2.png" alt="" />
+          </div>
+          <div
+            id="lemon-lime-can"
+            class="can-slider__list-item"
+            style="--position: 3"
+          >
+            <img src="./images/can-3.png" alt="" />
+          </div>
+          <div
+            id="watermelon-can"
+            class="can-slider__list-item"
+            style="--position: 4"
+          >
+            <img src="./images/can-4.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <h2 id="can-flavor" class="can-flavor eczar-medium">
+        Choose your flavor
+      </h2>
+      <section class="feedback">
+        <h2 class="feedback_text eczar-medium feedback_text--left">
+          let us know
+        </h2>
+        <h2 class="feedback_text eczar-medium feedback_text--right">
+          your feedback
+        </h2>
+      </section>
+      <article class="feedback__stars">
+        <svg width="200" height="200" viewBox="0 0 24 24">
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            fill="white"
+            stroke="yellow"
+            stroke-width=".5"
+          />
+        </svg>
+        <svg width="200" height="200" viewBox="0 0 24 24">
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            fill="white"
+            stroke="yellow"
+            stroke-width=".5"
+          />
+        </svg>
+        <svg width="200" height="200" viewBox="0 0 24 24">
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            fill="white"
+            stroke="yellow"
+            stroke-width=".5"
+          />
+        </svg>
+        <svg width="200" height="200" viewBox="0 0 24 24">
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            fill="white"
+            stroke="yellow"
+            stroke-width=".5"
+          />
+        </svg>
+        <svg width="200" height="200" viewBox="0 0 24 24">
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            fill="white"
+            stroke="yellow"
+            stroke-width=".5"
+          />
+        </svg>
+      </article>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
