@@ -4,6 +4,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .container {
   margin: 0 auto;
@@ -37,6 +41,10 @@ header {
   letter-spacing: 15px;
 }
 
+.header__title-arrow-hint {
+  font-size: 24px;
+}
+
 .header__subtitle {
   font-size: 64px;
   letter-spacing: 15px;
@@ -44,14 +52,62 @@ header {
   margin-bottom: 30px;
   line-height: 250px;
 }
+
+@keyframes arrowFill {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 80px;
+  }
+}
+
 .arrow {
   width: 80px;
   height: 80px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./images/arrow-down.png");
+  -webkit-mask: url("./images/arrow-down.svg") center/contain no-repeat;
+  mask: url("./images/arrow-down.svg") center/contain no-repeat;
+  background-color: #000;
   position: relative;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 0px;
+  -webkit-mask: inherit;
+  mask: inherit;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.arrow-lemon-lime::after {
+  background: linear-gradient(to bottom, #1a871d, #2bad2f);
+}
+
+.arrow-grape::after {
+  background: linear-gradient(to bottom, #dda2f2, #e33ddc);
+}
+
+.arrow-watermelon::after {
+  background: linear-gradient(to bottom, #de073b, #a9cd77);
+}
+
+.arrow-cherry::after {
+  background: linear-gradient(to bottom, #780023, #d95494);
+}
+
+.arrow:hover::after {
+  height: 100%;
 }
 
 @keyframes floatUpDown {
